@@ -1,21 +1,60 @@
 /*tablet*/
 @media screen and (min-width:576px){
+
 /*sidebar grow*/
 .side-bar{
     flex-basis: 200px;
-    flex-shrink: 0;
 }
 header{
     margin-left: 200px;   
 }
-    
+.side-bar{
+    padding: 5px 15px;
 }
+
+/* sidebar logo */
+.logo{
+    flex-basis: 90px;
+}
+.logo a:first-child{
+    display:none;
+}
+.logo a:last-child{
+    display:block;
+}
+
+/* sidebar nav-top */
+.nav-top ul h4{
+    display: inline-block;
+}
+
+/* sidebar playlist */
+.playlist .to-hide{
+    display: block;
+}
+
+/* account footer side-bar */
+.account .install, .account .user{
+    justify-content: flex-start;
+}
+
+.side-bar .account a:last-child, .side-bar .border-account{
+    display:block;
+}
+
+}
+
+
+
+
 
 
 /*desktop*/
 @media screen and (min-width:768px){
    
 }
+
+
 
 
 

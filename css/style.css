@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: 2px dashed green;*/
 }
 
 /*generics*/
@@ -20,6 +19,10 @@ img{
 a{
     display: block;
     text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
 }
 
 .wrapper{
@@ -56,15 +59,19 @@ header{
     background-color: #080B12;
 }
 
-/*layout*/
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/*macro-layout figli> di wrapper*/
 .side-bar{
     flex-basis: 40px;
     flex-shrink: 0;
+    background-color: #000000;
+    padding: 0 5px 10px 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-card{
@@ -77,11 +84,29 @@ header{
 .main-content{
     flex-grow: 1;
 }
+/* text */
+h2, h3, h4, .side-bar{
+    font-weight: 600;
+}
 
+.playlist *, .playlist h2, .account{
+    font-size: 12px;
+}
 
 /*color*/
+.side-bar *, .nav-top img{
+    /* grey light */
+    color:#A0A1A0
+}
+.logo img{
+    /* grey light svg */
+    fill: #000000
+}
 
-
+.playlist h2, .account h3{
+    /* white */
+    color: #fff;
+}
 /*bg*/
 
 
@@ -106,8 +131,111 @@ header{
 /*utilities*/
 
 /*header*/
-
 header .btn a{
     color: #fff;
     font-size: 12px;
 }
+
+/*sidebar layout*/
+.logo{
+    flex-basis: 45px;
+}
+.nav-top{
+    flex-basis: 120px;
+    padding: 0px 3px;
+}
+
+.playlist{
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+.account{
+    flex-basis: 65px;
+}
+
+/* sidebar logo */
+.side-bar .logo{
+    padding: 5px 0 15px 0;
+}
+
+.logo a:last-child{
+    width: 80%;
+    display:none;
+}
+
+/* sidebar nav-top */
+.nav-top ul h4{
+    display: none;
+    font-size: 12px;
+}
+.nav-top ul img{
+    width: 24px;
+}
+.nav-top ul a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+/* sidebar playlist */
+.playlist .to-hide{
+    display: none;
+}
+
+.create-playlist{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.create-playlist i{
+    font-size: 30px;
+}
+    
+
+.playlist li{
+    margin: 10px 0;
+}
+
+/* account footer side-bar */
+.install img{
+    width: 15px;
+}
+.user img{
+    width: 22px;
+}
+
+.user a:first-child{
+    background-color: #A0A1A0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.account .install, .account .user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.border-account{
+    width: 100%;
+    border: 1px solid #A0A1A0;
+}
+
+.account .install, .border-account{
+    margin-bottom: 10px;
+}
+
+.side-bar .account a:last-child, .side-bar .border-account{
+    display:none;
+}
+
