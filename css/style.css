@@ -109,12 +109,10 @@ h2, h3, h4, .side-bar,
 
 .playlist *, .playlist h2, 
 .account, .main-content nav a, 
-.main-content figcaption h4{
+.main-content .info-cont h4,
+.main-content section p,
+.main-content .info-cont h3{
     font-size: 12px;
-}
-
-.main-content figcaption h3{
-    font-size: 16px;
 }
 
 .main-content section h2{
@@ -124,7 +122,8 @@ h2, h3, h4, .side-bar,
 /*color*/
 .side-bar *, .nav-top img,
 .main-content nav a, 
-.main-content figcaption h4{
+.main-content .info-cont h4,
+.main-content section p{
     /* grey light */
     color:#A0A1A0
 }
@@ -135,7 +134,7 @@ h2, h3, h4, .side-bar,
 
 .playlist h2, .account h3,
 .main-content section h2,
-.main-content figcaption h3{
+.main-content .info-cont h3{
     /* white */
     color: #fff;
 }
@@ -269,10 +268,11 @@ header .btn a{
     display:none;
 }
 
-/* main-content */
+/* main-content*/
 .main-content{
     padding: 15px;
 }
+
 /* main-content - top nav-bar*/
 .main-content nav ul{
     max-height: 40px;
@@ -289,7 +289,13 @@ header .btn a{
     justify-content: center;
 }
 
-.main-content figcaption{
+
+/* main-content - sections */
+#recently{
+    margin-top: 55px;
+}
+
+.main-content .col .info-cont{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,12 +303,13 @@ header .btn a{
     padding: 0 13px;
 }
 
-/* main-content - row recently played */
-
-/* .main-content section *{
-    border: 1px dashed gold;
-} */
-
-#recently{
-    margin-top: 75px;
+#user-mix , #popular {
+    margin-top:25px;
 }
+
+#user-mix p, #popular p{
+    margin: 10px 0 20px 0;
+}
+
+
+

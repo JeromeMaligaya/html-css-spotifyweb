@@ -46,13 +46,12 @@
     }
     /* micro layout main-content*/
     .row{
-      
         margin: 15px -5px 0 -5px;
     }
 
     .col{
-        width: 50%;
-        min-height: 245px;
+        flex-basis: 50%;
+        min-height: 215px;
         padding: 5px;
     }
 
@@ -72,8 +71,8 @@
    
     /* micro layout main-content*/
     .col{
-        width: 25%;
-        min-height: 210px;
+        flex-basis: 25%;
+        min-height: 170px;
     }
 
 }
@@ -91,8 +90,12 @@
 
     /* micro layout main-content*/
     .col{
-        width: calc(100% / 6);
-        min-height: 245px;
+        flex-basis: calc(100% / 6);
+        min-height: 180px;
+    }
+
+    #recently{
+        margin-top: 15px;
     }
 
 }
