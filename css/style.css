@@ -62,7 +62,6 @@ header{
     margin: 0 auto;
 }
 
-/*macro-layout figli> di wrapper*/
 .side-bar{
     flex-basis: 40px;
     flex-shrink: 0;
@@ -83,16 +82,41 @@ header{
 .main-content{
     flex-grow: 1;   
 }
+/* micro layout */
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px -5px 0 -5px;
+}
+
+.col{
+    width: 50%;
+    min-height: 275px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.box-img{
+    width: 200px;
+    height: 200px;
+}
 
 /* text */
 h2, h3, h4, .side-bar,
-.main-content nav a{
+.main-content nav a,
+.main-content section *{
     font-weight: 600;
 }
 
 .playlist *, .playlist h2, 
 .account, .main-content nav a{
     font-size: 12px;
+}
+
+.main-content section h2{
+    font-size: 20px;
 }
 
 /*color*/
@@ -106,7 +130,8 @@ h2, h3, h4, .side-bar,
     fill: #000000
 }
 
-.playlist h2, .account h3{
+.playlist h2, .account h3,
+.main-content section h2{
     /* white */
     color: #fff;
 }
@@ -258,4 +283,14 @@ header .btn a{
     margin-bottom: 25px;
     display: flex;
     justify-content: center;
+}
+
+/* main-content - row recently played */
+
+.main-content section *{
+    border: 1px dashed gold;
+}
+
+#recently{
+    margin-top: 75px;
 }

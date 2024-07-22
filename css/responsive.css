@@ -43,7 +43,23 @@
     /* main-content - top nav-bar*/
     .main-content nav ul li{
         flex-basis: calc(100% / 3);
-}
+    }
+    /* micro layout main-content*/
+    .row{
+      
+        margin: 15px -5px 0 -5px;
+    }
+
+    .col{
+        width: 50%;
+        min-height: 245px;
+        padding: 5px;
+    }
+
+    .box-img{
+        width: 150px;
+        height: 150px;
+    }
 }
 
 
@@ -58,6 +74,16 @@
         flex-basis: 20%;
     }
    
+    /* micro layout main-content*/
+    .col{
+        width: 25%;
+        min-height: 210px;
+    }
+
+    .box-img{
+        width: 120px;
+        height: 120px;
+    }
 }
 
 
@@ -66,9 +92,23 @@
 
 /*desktop*/
 @media screen and (min-width:992px){
-      /* main-content - top nav-bar*/
-      .main-content nav ul li{
+    /* main-content - top nav-bar*/
+    .main-content nav ul li{
         flex-basis: calc(100% / 6);
+    }
+
+    /* micro layout main-content*/
+    .col{
+        width: calc(100% / 6);
+        min-height: 245px;
+    }
+
+    .box-img{
+        width: 150px;
+        height: 150px;
+    }
 }
+
+
    
-}
+
