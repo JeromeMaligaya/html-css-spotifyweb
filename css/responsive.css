@@ -1,45 +1,49 @@
 /*tablet*/
 @media screen and (min-width:576px){
 
-/*sidebar grow*/
-.side-bar{
-    flex-basis: 200px;
-}
+    /*sidebar grow*/
+    .side-bar{
+        flex-basis: 200px;
+    }
 
-.side-bar{
-    padding: 5px 15px;
-}
+    .side-bar{
+        padding: 5px 15px;
+    }
 
-/* sidebar logo */
-.logo{
-    flex-basis: 90px;
-}
-.logo a:first-child{
-    display:none;
-}
-.logo a:last-child{
-    display:block;
-}
+    /* sidebar logo */
+    .logo{
+        flex-basis: 90px;
+    }
+    .logo a:first-child{
+        display:none;
+    }
+    .logo a:last-child{
+        display:block;
+    }
 
-/* sidebar nav-top */
-.nav-top ul h4{
-    display: inline-block;
-}
+    /* sidebar nav-top */
+    .nav-top ul h4{
+        display: inline-block;
+    }
 
-/* sidebar playlist */
-.playlist .to-hide{
-    display: block;
-}
+    /* sidebar playlist */
+    .playlist .to-hide{
+        display: block;
+    }
 
-/* account footer side-bar */
-.account .install, .account .user{
-    justify-content: flex-start;
-}
+    /* account footer side-bar */
+    .account .install, .account .user{
+        justify-content: flex-start;
+    }
 
-.side-bar .account a:last-child, .side-bar .border-account{
-    display:block;
-}
+    .side-bar .account a:last-child, .side-bar .border-account{
+        display:block;
+    }
 
+    /* main-content - top nav-bar*/
+    .main-content nav ul li{
+        flex-basis: calc(100% / 3);
+}
 }
 
 
@@ -49,6 +53,10 @@
 
 /*desktop*/
 @media screen and (min-width:768px){
+    /* main-content - top nav-bar*/
+    .main-content nav ul li{
+        flex-basis: 20%;
+    }
    
 }
 
@@ -58,5 +66,9 @@
 
 /*desktop*/
 @media screen and (min-width:992px){
+      /* main-content - top nav-bar*/
+      .main-content nav ul li{
+        flex-basis: calc(100% / 6);
+}
    
 }

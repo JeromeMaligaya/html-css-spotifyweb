@@ -52,7 +52,7 @@ header{
     position: sticky;
     top: 0;
     right: 0; 
-    background-color: #080B12;
+    background-color: #080b128e;
     display: flex;
     justify-content: flex-end;
 }
@@ -85,16 +85,19 @@ header{
 }
 
 /* text */
-h2, h3, h4, .side-bar{
+h2, h3, h4, .side-bar,
+.main-content nav a{
     font-weight: 600;
 }
 
-.playlist *, .playlist h2, .account{
+.playlist *, .playlist h2, 
+.account, .main-content nav a{
     font-size: 12px;
 }
 
 /*color*/
-.side-bar *, .nav-top img{
+.side-bar *, .nav-top img,
+.main-content nav a{
     /* grey light */
     color:#A0A1A0
 }
@@ -237,3 +240,22 @@ header .btn a{
     display:none;
 }
 
+/* main-content */
+.main-content{
+    padding: 15px;
+}
+/* main-content - top nav-bar*/
+.main-content nav ul{
+    max-height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.main-content nav ul li{
+    flex-basis: 25%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
