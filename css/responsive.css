@@ -5,9 +5,7 @@
 .side-bar{
     flex-basis: 200px;
 }
-header{
-    margin-left: 200px;   
-}
+
 .side-bar{
     padding: 5px 15px;
 }

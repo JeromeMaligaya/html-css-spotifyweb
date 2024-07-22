@@ -35,7 +35,7 @@ ul{
 main{
     flex-grow: 1;
     display: flex;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 footer{
@@ -49,14 +49,12 @@ footer{
 header{
     height: 90px;
     flex-shrink: 0;
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    margin-left: 40px;
-    margin-right: 20px;
+    right: 0; 
     background-color: #080B12;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .container{
@@ -79,11 +77,13 @@ header{
     display: flex;
     flex-direction: column;
     background-color: #141922;
+    overflow-y: auto;
 }
 
 .main-content{
-    flex-grow: 1;
+    flex-grow: 1;   
 }
+
 /* text */
 h2, h3, h4, .side-bar{
     font-weight: 600;
@@ -124,9 +124,7 @@ h2, h3, h4, .side-bar{
     background-color: transparent;
     width: 175px;
     height: 40px;
-    position: fixed;
-    top: 20px;
-    right: 25px;
+    margin: 15px 5px 0 0;
 }
 /*utilities*/
 
