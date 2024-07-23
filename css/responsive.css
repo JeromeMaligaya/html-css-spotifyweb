@@ -45,16 +45,20 @@
         flex-basis: calc(100% / 3);
     }
     /* micro layout main-content*/
-    .row{
+    .main-content .row{
         margin: 15px -5px 0 -5px;
     }
 
-    .col{
+    .main-content .col{
         flex-basis: 50%;
         min-height: 215px;
         padding: 5px;
     }
 
+    /* footer */
+    .col-left, .col-right{
+        width: 200px;
+    }
 }
 
 
@@ -68,9 +72,9 @@
     .main-content nav ul li{
         flex-basis: 20%;
     }
-   
+
     /* micro layout main-content*/
-    .col{
+    .main-content .col{
         flex-basis: 25%;
         min-height: 170px;
     }
@@ -89,7 +93,7 @@
     }
 
     /* micro layout main-content*/
-    .col{
+    .main-content .col{
         flex-basis: calc(100% / 6);
         min-height: 180px;
     }
@@ -101,5 +105,5 @@
 }
 
 
-   
+
 
