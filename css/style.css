@@ -144,9 +144,6 @@ footer .col-mid, footer .col-right{
     /* white */
     color: #FEFFFF;
 }
-/*bg*/
-
-
 /*btn*/
 .btn{ 
     border: 1px solid;
@@ -235,6 +232,11 @@ header .btn a{
 .playlist li{
     margin: 10px 0;
 }
+
+.playlist, .playlist ul{
+    overflow-y: auto;
+}
+
 
 /* account footer side-bar */
 .install img{
@@ -435,8 +437,6 @@ footer .row{
 }
 
 .timebar-current, .volume-current{
-    top: 0;
-    left: 0;
     width: 25%;
     border: 1px solid #BEBEBE;
     border-radius: 20px;
